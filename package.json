@@ -1,0 +1,48 @@
+{
+  "name": "@yelmer-samples/coffe-shared",
+  "version": "1.0.2",
+  "description": "Shared definitions for Coffee project",
+  "keywords": [
+    "coffee"
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "clear": "rimraf dist",
+    "lint": "eslint src/**/*.ts",
+    "build": "npm run clear && tsc",
+    "publix": "npm run build && npm publish -access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mustafayelmer/coffee-shared.git"
+  },
+  "bugs": {
+    "email": "mustafayelmer.com",
+    "url": "https://github.com/mustafayelmer/coffee-shared/issues"
+  },
+  "homepage": "https://github.com/mustafayelmer/coffee-shared#readme",
+  "author": {
+    "name": "Mustafa Yelmer",
+    "email": "mustafayelmer.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "@nestjs/swagger": "^5.1.0"
+  }
+}
