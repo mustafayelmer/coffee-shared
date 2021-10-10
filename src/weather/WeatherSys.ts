@@ -1,18 +1,18 @@
 import {ApiProperty} from "@nestjs/swagger";
 
 export class WeatherSys {
-    @ApiProperty({type: Number})
+    @ApiProperty({name: '', type: Number})
     type: number;
 
-    @ApiProperty({type: Number})
+    @ApiProperty({name: '', type: Number})
     id: number;
 
-    @ApiProperty({type: String})
+    @ApiProperty({name: 'Country code, ISO 2-letters', type: String})
     country: string;
 
-    @ApiProperty({type: Number})
+    @ApiProperty({name: 'Sunrise time, UTC', type: Number})
     sunrise: number;
 
-    @ApiProperty({type: Number})
+    @ApiProperty({name: 'Sunset time, UTC', type: Number})
     sunset: number;
 }

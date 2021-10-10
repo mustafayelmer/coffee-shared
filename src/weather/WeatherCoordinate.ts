@@ -1,9 +1,9 @@
 import {ApiProperty} from "@nestjs/swagger";
 
 export class WeatherCoordinate {
-    @ApiProperty({type: Number})
+    @ApiProperty({name: 'Longitude', type: Number})
     lon: number;
 
-    @ApiProperty({type: Number})
+    @ApiProperty({name: 'Latitude', type: Number})
     lat: number;
 }

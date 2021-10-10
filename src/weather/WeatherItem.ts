@@ -1,15 +1,15 @@
 import {ApiProperty} from "@nestjs/swagger";
 
 export class WeatherItem {
-    @ApiProperty({type: Number})
+    @ApiProperty({name: 'Condition id', type: Number})
     id: number;
 
-    @ApiProperty({type: String})
+    @ApiProperty({name: 'Group of weather parameters (Rain, Snow, Extreme etc.)', type: String})
     main: string;
 
-    @ApiProperty({type: String})
+    @ApiProperty({name: 'Weather condition within the group', type: String})
     description: string;
 
-    @ApiProperty({type: String})
+    @ApiProperty({name: 'Weather icon id', type: String})
     icon: string;
 }

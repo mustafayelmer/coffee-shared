@@ -5,13 +5,14 @@ import {WeatherMain} from "./weather/WeatherMain";
 import {WeatherRoot} from "./weather/WeatherRoot";
 import {WeatherSys} from "./weather/WeatherSys";
 import {WeatherWind} from "./weather/WeatherWind";
-import {WeatherHistoryItem} from "./weather/WeatherHistoryItem";
+import {WeatherRain} from "./weather/WeatherRain";
+import {WeatherSnow} from "./weather/WeatherSnow";
 import {CityBase} from "./city/CityBase";
 import {CityDetail} from "./city/CityDetail";
 import {CityShort} from "./city/CityShort";
 
 export {
-    WeatherCloud, WeatherCoordinate, WeatherHistoryItem, WeatherItem, WeatherMain,
-    WeatherSys, WeatherWind, WeatherRoot,
+    WeatherCloud, WeatherCoordinate, WeatherItem, WeatherMain,
+    WeatherSys, WeatherWind, WeatherRain, WeatherSnow, WeatherRoot,
     CityBase, CityDetail, CityShort
 }
