@@ -21,18 +21,21 @@ Shared data models for coffee project
 
 ## Data Models
 - Weather
-  - [WeatherCloud](./src/weather/WeatherCloud.ts)
-  - [WeatherCoordinate](./src/weather/WeatherCoordinate.ts)
-  - [WeatherHistoryItem](./src/weather/WeatherHistoryItem.ts)
-  - [WeatherItem](./src/weather/WeatherItem.ts)
-  - [WeatherMain](./src/weather/WeatherMain.ts)
-  - [WeatherSys](./src/weather/WeatherSys.ts)
-  - [WeatherWind](./src/weather/WeatherWind.ts)
-  - [WeatherRoot](./src/weather/WeatherRoot.ts)
+  - *interface* [Weather](./src/weather/Weather.ts)
+  - *class* [WeatherCloud](./src/weather/WeatherCloud.ts)
+  - *class* [WeatherCoordinate](./src/weather/WeatherCoordinate.ts)
+  - *class* [WeatherItem](./src/weather/WeatherItem.ts)
+  - *class* [WeatherMain](./src/weather/WeatherMain.ts)
+  - *class* [WeatherRain](./src/weather/WeatherRain.ts)
+  - *class* [WeatherSnow](./src/weather/WeatherSnow.ts)
+  - *class* [WeatherWind](./src/weather/WeatherWind.ts)
+  - *class* [WeatherSys](./src/weather/WeatherSys.ts)
+  - *class* [WeatherRoot](./src/weather/WeatherRoot.ts)
 - City
-  - [CityBase](./src/city/CityBase.ts)
-  - [CityDetail](./src/city/CityDetail.ts)
-  - [CityShort](./src/city/CityShort.ts)
+  - *interface* [City](./src/city/City.ts)
+  - *class* [CityBase](./src/city/CityBase.ts)
+  - *class* [CityDetail](./src/city/CityDetail.ts)
+  - *class* [CityShort](./src/city/CityShort.ts)
 
 ---
 ## Prepared by
