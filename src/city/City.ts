@@ -1,4 +1,4 @@
-export interface CityAble {
+export interface City {
     id: string;
     name: string;
 }

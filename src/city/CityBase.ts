@@ -1,7 +1,7 @@
 import {ApiProperty} from "@nestjs/swagger";
-import {CityAble} from "./CityAble";
+import {City} from "./City";
 
-export class CityBase implements CityAble {
+export class CityBase implements City {
     @ApiProperty({type: String, format: 'uuid'})
     id: string;
 

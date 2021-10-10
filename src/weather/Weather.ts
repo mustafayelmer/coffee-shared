@@ -1,6 +1,6 @@
 import {WeatherRoot} from "./WeatherRoot";
 
-export interface WeatherAble {
+export interface Weather {
     id: string;
     city: string;
     doc: WeatherRoot;
