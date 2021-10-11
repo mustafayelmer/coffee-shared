@@ -1,4 +1,6 @@
 import {ApiProperty} from "@nestjs/swagger";
+import {HttpException} from "@nestjs/common";
+import { Response } from 'express';
 
 export class ErrorResponse {
     @ApiProperty({description: 'Error name', type: String, required: false})
@@ -13,6 +15,18 @@ export class ErrorResponse {
     @ApiProperty({description: 'timestamp', type: String})
     timestamp: string;
 
-    @ApiProperty({description: 'path', type: String, required: false})
-    path: string;
+    static directError(res: Response, err: Error|HttpException, status = 499) {
+        if (err instanceof HttpException) {
+            status = err?.getStatus();
+        }
+        const track = Math.floor(Math.random() * 100000000);
+        res
+            .status(status)
+            .json({
+                name: err.name,
+                message: err.message,
+                timestamp: new Date().toISOString(),
+                track: track.toString(32),
+            });
+    }
 }
