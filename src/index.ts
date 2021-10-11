@@ -16,11 +16,12 @@ import {City} from "./city/City";
 import {CityBase} from "./city/CityBase";
 import {CityDetail} from "./city/CityDetail";
 import {CityShort} from "./city/CityShort";
+import {CityMedium} from "./city/CityMedium";
 
 export {
     ErrorResponse, UnauthorizedError, HttpExceptionFilter,
     DeleteResponse,
     Weather, WeatherCloud, WeatherCoordinate, WeatherItem, WeatherMain,
     WeatherSys, WeatherWind, WeatherRain, WeatherSnow, WeatherRoot,
-    City, CityBase, CityDetail, CityShort
+    City, CityBase, CityDetail, CityShort, CityMedium
 }
