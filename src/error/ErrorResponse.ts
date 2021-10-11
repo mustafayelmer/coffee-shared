@@ -20,6 +20,7 @@ export class ErrorResponse {
             status = err?.getStatus();
         }
         const track = Math.floor(Math.random() * 100000000);
+        res.statusMessage = err?.name ?? 'Unknown error';
         res
             .status(status)
             .json({
