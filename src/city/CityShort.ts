@@ -3,6 +3,6 @@ import {WeatherMain} from "../weather/WeatherMain";
 import {ApiProperty} from "@nestjs/swagger";
 
 export class CityShort extends CityBase {
-    @ApiProperty({type: WeatherMain})
+    @ApiProperty({description: 'Latest weather', type: WeatherMain})
     weather: WeatherMain;
 }
