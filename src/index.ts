@@ -1,4 +1,3 @@
-import {BaseError} from "./error/BaseError";
 import {ErrorResponse} from "./error/ErrorResponse";
 import {UnauthorizedError} from "./error/UnauthorizedError";
 import {DeleteResponse} from "./dto/DeleteResponse";
@@ -18,7 +17,7 @@ import {CityDetail} from "./city/CityDetail";
 import {CityShort} from "./city/CityShort";
 
 export {
-    BaseError, ErrorResponse, UnauthorizedError,
+    ErrorResponse, UnauthorizedError,
     DeleteResponse,
     Weather, WeatherCloud, WeatherCoordinate, WeatherItem, WeatherMain,
     WeatherSys, WeatherWind, WeatherRain, WeatherSnow, WeatherRoot,

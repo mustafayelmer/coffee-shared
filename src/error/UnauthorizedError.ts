@@ -1,7 +1,6 @@
-import {HttpStatus} from "@nestjs/common";
-import {BaseError} from "./BaseError";
+import {HttpException, HttpStatus} from "@nestjs/common";
 
-export class UnauthorizedError extends BaseError {
+export class UnauthorizedError extends HttpException {
     constructor() {
         super(`You must use api-key to use it`, HttpStatus.UNAUTHORIZED);
     }
