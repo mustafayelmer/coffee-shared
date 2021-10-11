@@ -1,5 +1,6 @@
 import {ErrorResponse} from "./error/ErrorResponse";
 import {UnauthorizedError} from "./error/UnauthorizedError";
+import {HttpExceptionFilter} from "./error/HttpExceptionFilter";
 import {DeleteResponse} from "./dto/DeleteResponse";
 import {Weather} from "./weather/Weather";
 import {WeatherCloud} from "./weather/WeatherCloud";
@@ -17,7 +18,7 @@ import {CityDetail} from "./city/CityDetail";
 import {CityShort} from "./city/CityShort";
 
 export {
-    ErrorResponse, UnauthorizedError,
+    ErrorResponse, UnauthorizedError, HttpExceptionFilter,
     DeleteResponse,
     Weather, WeatherCloud, WeatherCoordinate, WeatherItem, WeatherMain,
     WeatherSys, WeatherWind, WeatherRain, WeatherSnow, WeatherRoot,

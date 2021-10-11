@@ -15,7 +15,7 @@ export class ErrorResponse {
     @ApiProperty({description: 'timestamp', type: String})
     timestamp: string;
 
-    static directError(res: Response, err: Error|HttpException, status = 499) {
+    static directError(res: Response, err: Error|HttpException, status = 499): void {
         if (err instanceof HttpException) {
             status = err?.getStatus();
         }
