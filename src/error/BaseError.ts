@@ -1,4 +1,4 @@
-export class BaseError extends Error {
+export abstract class BaseError extends Error {
     status: number;
     track: number;
 

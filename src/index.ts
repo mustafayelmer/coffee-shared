@@ -1,6 +1,7 @@
-import {BaseError} from "./shared/BaseError";
-import {DeleteResponse} from "./shared/DeleteResponse";
-import {ErrorResponse} from "./shared/ErrorResponse";
+import {BaseError} from "./error/BaseError";
+import {ErrorResponse} from "./error/ErrorResponse";
+import {UnauthorizedError} from "./error/UnauthorizedError";
+import {DeleteResponse} from "./dto/DeleteResponse";
 import {Weather} from "./weather/Weather";
 import {WeatherCloud} from "./weather/WeatherCloud";
 import {WeatherCoordinate} from "./weather/WeatherCoordinate";
@@ -17,7 +18,8 @@ import {CityDetail} from "./city/CityDetail";
 import {CityShort} from "./city/CityShort";
 
 export {
-    BaseError, DeleteResponse, ErrorResponse,
+    BaseError, ErrorResponse, UnauthorizedError,
+    DeleteResponse,
     Weather, WeatherCloud, WeatherCoordinate, WeatherItem, WeatherMain,
     WeatherSys, WeatherWind, WeatherRain, WeatherSnow, WeatherRoot,
     City, CityBase, CityDetail, CityShort
